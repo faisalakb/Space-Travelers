@@ -207,6 +207,13 @@ This project is deployed at github pages you can clone it here. [Please click to
 - Twitter: [@faisalakb786](https://twitter.com/Faisalakb786)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/faisal-mumtaz-514a221a6/)
 
+👤 **Bett Enoch**
+
+- GitHub: [@bettenoch](https://github.com/Bettenoch)
+- Twitter: [@BybEnoch](https://twitter.com/BybEnoch)
+- LinkedIn: [@GeoIntelligence](https://www.linkedin.com/in/bett-kipngeno-enock-8b5153214/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
