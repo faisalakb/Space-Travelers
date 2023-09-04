@@ -29,9 +29,9 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 BookStore <a name="about-project"></a>
+# 📖 Space Travelers <a name="about-project"></a>
 
-"BookStore" involves the development of a Single Page application using an external API.
+"Space Travelers" involves the development of a Single Page application using an external API.
 
 I have established the requisite development environment and tools for creating a React application. Subsequent to this, I will proceed with the actual application development in upcoming phases.
 
