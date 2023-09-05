@@ -1,21 +1,21 @@
-.active-member-button{
-  background-color: green; 
+.active-member-button {
+  background-color: green;
   color: white;
 }
 
-.not-a-member-button{
-  background-color: grey; 
+.not-a-member-button {
+  background-color: grey;
   color: white;
 }
 
-.join-mission{
+.join-mission {
   border: 1px solid red;
-  color:red;
+  color: red;
   border-radius: 4px;
 }
 
-.not-join-mission{
+.not-join-mission {
   border: 1px solid black;
-  color:black;
+  color: black;
   border-radius: 4px;
 }
