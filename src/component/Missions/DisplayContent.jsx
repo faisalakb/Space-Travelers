@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMission, joinMissionReducer } from './Missions/Mission';
+import { fetchMission, joinMissionReducer } from '../../redux/missionSlice/Mission';
 
 const DisplayContent = () => {
   const dispatch = useDispatch();
