@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import './MyProfile.module.css';
 
 const MyProfile = () => {
   const missionState = useSelector((state) => state.missionSlice);
@@ -14,7 +15,7 @@ const MyProfile = () => {
           <ul>
             {missionState.data.map((current) => (
               current.reserved ? (
-                <li key={current.mission_id}>{current.mission_name}</li>
+                <li className="myProfile-items" key={current.mission_id}>{current.mission_name}</li>
               ) : null
             ))}
           </ul>
