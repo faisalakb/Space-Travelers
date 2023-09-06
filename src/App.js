@@ -1,6 +1,7 @@
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React, { useEffect } from 'react';
+import { getRockets } from './redux/rockets/rocketSlice';
 import DisplayContent from './component/Missions/DisplayContent';
 import NavBar from './component/NavBar';
 import Rocket from './component/Rockets/Rocket';
@@ -11,6 +12,11 @@ import './component/Missions/Mission.module.css';
 
 function App() {
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getRockets());
+  });
+  
   useEffect(() => {
     dispatch(fetchMission());
   }, [dispatch]);
