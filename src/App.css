@@ -19,3 +19,10 @@
   color: black;
   border-radius: 4px;
 }
+
+.myProfile-items {
+  width: 30%;
+  height: 20px;
+  border: 1px solid grey;
+  margin-top: 4px;
+}
