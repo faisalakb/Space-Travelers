@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import planet from './assets/planet.png';
 import './NavBar.css';
 
@@ -12,13 +12,19 @@ const NavBar = () => (
       </div>
       <ul className="nav-items">
         <li className="li">
-          <NavLink to="/" id="navlink" className={({ isActive }) => (isActive ? 'active' : '')}>Rocket&apos;s</NavLink>
+          <Link to="/">Rocket&apos;s</Link>
+          {' '}
+          {/* Use Link component */}
         </li>
         <li className="li">
-          <NavLink to="/Mission" id="navlink" className={({ isActive }) => (isActive ? 'active' : '')}>Mission&apos;s</NavLink>
+          <Link to="/Mission">Mission&apos;s</Link>
+          {' '}
+          {/* Use Link component */}
         </li>
         <li className="li">
-          <NavLink to="/MyProfile" id="navlink" className={({ isActive }) => (isActive ? 'active' : '')}>My Profile</NavLink>
+          <Link to="/MyProfile">My Profile</Link>
+          {' '}
+          {/* Use Link component */}
         </li>
       </ul>
     </nav>
