@@ -1,4 +1,5 @@
 import React from 'react';
+import './Rocket.css';
 import { useSelector } from 'react-redux/es/exports';
 import RocketData from './RocketData';
 

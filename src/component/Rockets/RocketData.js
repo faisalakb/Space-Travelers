@@ -8,10 +8,6 @@ const RocketData = ({
 }) => {
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(getRockets());
-  // });
-
   const toggleStatus = () => {
     if (reserved) {
       dispatch(cancelBooking(id));
@@ -21,13 +17,15 @@ const RocketData = ({
   };
   return (
     <div className="rockets-holder">
-      <article>
+      <article className="img-tag">
         <img className="rocket-img" src={img[0]} alt="rocket-img" />
       </article>
-      <article>
-        <p>{name}</p>
-        <p>
-          {reserved ? <span className="reserved-tag">Reserved</span> : null}
+      <article className="img-info">
+        <p className="rocket-name">{name}</p>
+
+        <p className="reserve-descp">
+          {reserved ? <span className="reserve-popup">Reserved</span> : null}
+
           {descp}
         </p>
         <button

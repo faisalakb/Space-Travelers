@@ -3,12 +3,13 @@ import { useSelector } from 'react-redux';
 import './MyProfile.module.css';
 
 const MyProfile = () => {
+  
+  const missionState = useSelector((state) => state.missionSlice);
   const rocketState = useSelector((state) => state.rockets);
-  console.log(rocketState);
 
   return (
     <>
-      {rocketState.isLoading ? (
+      {missionState.isLoading ? (
         <h1>Loading ...</h1>
       ) : (
         <div>
@@ -17,6 +18,9 @@ const MyProfile = () => {
             {rocketState.rockets.map((current) => (
               current.reserved ? (
                 <li className="myProfile-items" key={current.id}>{current.name}</li>
+            {missionState.data.map((current) => (
+              current.reserved ? (
+                <li className="myProfile-items" key={current.mission_id}>{current.mission_name}</li>
               ) : null
             ))}
           </ul>
