@@ -18,3 +18,10 @@ tr:nth-child(even) {
 .title {
   font-weight: 600;
 }
+
+table{
+  margin-top: 15px;
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}

@@ -11,8 +11,6 @@ const DisplayContent = () => {
 
   return (
     <>
-      <h1>Hello call from display comp</h1>
-
       {missionState.isLoading ? (
         <h1>Loading ...</h1>
       ) : (
@@ -20,10 +18,10 @@ const DisplayContent = () => {
           <table>
             <thead>
               <tr>
-                <th>Mission</th>
-                <th>Description</th>
-                <th>Status</th>
-                <th>Empty</th>
+                <th style={{ width: '10%' }}>Mission</th>
+                <th style={{ width: '70%' }}>Description</th>
+                <th style={{ width: '10%' }}>Status</th>
+                <th style={{ width: '10%' }}> </th>
               </tr>
             </thead>
             <tbody>
