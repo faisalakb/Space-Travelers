@@ -7,6 +7,11 @@ const RocketData = ({
   name, descp, img, id, reserved,
 }) => {
   const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(getRockets());
+  // });
+
   const toggleStatus = () => {
     if (reserved) {
       dispatch(cancelBooking(id));

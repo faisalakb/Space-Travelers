@@ -9,13 +9,9 @@ const url = 'https://api.spacexdata.com/v4/rockets';
 export const getRockets = createAsyncThunk(
   'getRockets',
   async () => {
-    try {
-      const res = await axios.get(url);
-      // console.log(res.data);
-      return res.data;
-    } catch (error) {
-      throw new Error('Network response was not ok');
-    }
+    const res = await axios.get(url);
+    // console.log(res.data);
+    return res.data;
   },
 );
 

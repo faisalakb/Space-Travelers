@@ -1,12 +1,19 @@
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './App.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { getRockets } from './redux/rockets/rocketSlice';
 import NavBar from './component/NavBar';
 import Mission from './component/Missions/Mission';
 import Rocket from './component/Rockets/Rocket';
 import MyProfile from './component/MyProfile/MyProfile';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getRockets());
+  });
   return (
     <div className="App">
       <BrowserRouter>
