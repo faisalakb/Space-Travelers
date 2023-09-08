@@ -6,7 +6,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 BookStore ](#-Book-Store-)
+- [📖 Space Travelers ](#-Space-Travelers)
     - [How to build the "BookStore" website](#how-to-build-the-bookstore-website)
   - [🛠 Walk through ](#-walk-through-)
   - [🛠 Built With ](#-built-with-)
@@ -44,15 +44,17 @@ Phase 2 - Setup2 Branch:
 All prerequisites for the second stage of the project, focused on Components, have been met. I have established a designated directory named "components" within the CRA setup, encompassing textual, visual, and stylistic resources. Within this directory, a new file named "Calculator.js" has been created. Subsequently, a React component has been developed to align with the provided design specifications.
 <!-- > Describe your project in 1 or 2 sentences. -->
 
-### How to build the "BookStore" website
+### How to build the "Space Travelers" website
 
 - 1. Use REACT to build single page application
 - 2. Apply Linters
+- 3. Use External APIs
+- 3. Use Redux
 
 ## 🛠 Walk through <a name="walk-through"></a>
 
 <ul>
-  <li><a href="https://github.com/microverseinc/curriculum-react-redux/blob/main/bookstore/sneak_peek_v3_0.md">See the Project Requirement</a></li>
+  <li><a href="https://github.com/microverseinc/curriculum-react-redux/blob/main/group-project/project_space_travelers_hub.md">See the Project Requirement</a></li>
   <li>If required you should personalize the content of your page. Choose a topic that is different than the one in the original design</li>
 
 
@@ -165,7 +167,7 @@ Clone this repository to your desired folder:
 ```sh
   cd Javascript-capston
 
-  git https://github.com/faisalakb/BookStore
+  git https://github.com/faisalakb/Space-Travelers
 ```
 
 ### Install
@@ -208,6 +210,7 @@ This project is deployed at github pages you can clone it here. [Please click to
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/faisal-mumtaz-514a221a6/)
 
 
+
 👤 **Bett Enoch**
 
 - GitHub: [@bettenoch](https://github.com/Bettenoch)
@@ -220,7 +223,6 @@ This project is deployed at github pages you can clone it here. [Please click to
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Project 4: Fetch data from API**
 - [ ] **Project 5: Full website.**
 - [ ] **Project 6: Tests (pair programming).**
   
@@ -229,7 +231,7 @@ This project is deployed at github pages you can clone it here. [Please click to
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/faisalakb/BookStore/issues).
+Feel free to check the [issues page](https://github.com/faisalakb/Space-Travelers/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -247,6 +249,6 @@ I would like to thank the Microverse full-stack curriculum for the inspiration a
 
 ## 📝 License <a name="license"></a>
 
-This project is under [MIT](https://github.com/faisalakb/BookStore/blob/setup/LICENSE) licensed.
+This project is under [MIT](https://github.com/faisalakb/Space-Travelers/blob/setup/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
