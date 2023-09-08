@@ -182,7 +182,7 @@ Install this project with:
 ### Usage
 
 To run the project, execute the following command:
-run live server
+npm start
 
 ### Run tests
 
@@ -249,6 +249,6 @@ I would like to thank the Microverse full-stack curriculum for the inspiration a
 
 ## 📝 License <a name="license"></a>
 
-This project is under [MIT](https://github.com/faisalakb/Space-Travelers/blob/setup/LICENSE) licensed.
+This project is under [MIT](https://github.com/faisalakb/Space-Travelers/blob/Dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
