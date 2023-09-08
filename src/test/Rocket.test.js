@@ -1,9 +1,9 @@
+import '@testing-library/react';
 import rocketReducer, {
   initialState,
   reserveBooking,
   cancelBooking,
 } from '../redux/rockets/rocketSlice';
-import { render } from '@testing-library/react';
 
 describe('rocketSlice', () => {
   it('should return the initial state', () => {
