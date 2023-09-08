@@ -13,13 +13,13 @@ const NavBar = () => (
       </div>
       <ul className="nav-items">
         <li className="li">
-          <NavLink to="/" id="navlink" className={({ isActive }) => (isActive ? 'active' : '')}>Rocket&apos;s</NavLink>
+          <NavLink to="/" className={`${({ isActive }) => (isActive ? 'active' : '')} navlink`}>Rocket&apos;s</NavLink>
         </li>
         <li className="li">
-          <NavLink to="/Mission" id="navlink" className={({ isActive }) => (isActive ? 'active' : '')}>Mission&apos;s</NavLink>
+          <NavLink to="/Mission" className={`${({ isActive }) => (isActive ? 'active' : '')} navlink`}>Mission&apos;s</NavLink>
         </li>
         <li className="li">
-          <NavLink to="/MyProfile" id="navlink" className={({ isActive }) => (isActive ? 'active' : '')}>My Profile</NavLink>
+          <NavLink to="/MyProfile" className={`${({ isActive }) => (isActive ? 'active' : '')} navlink`}>My Profile</NavLink>
         </li>
       </ul>
     </nav>

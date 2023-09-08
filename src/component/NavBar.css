@@ -23,7 +23,7 @@
   gap: 2rem;
 }
 
-#navlink {
+.navlink {
   list-style: none;
   text-decoration: none;
   color: rgb(6, 167, 172);
@@ -31,4 +31,5 @@
 
 a.active {
   color: rgb(128, 6, 0);
+  text-decoration: underline;
 }
