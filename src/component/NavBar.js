@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { NavLink } from 'react-router-dom';
 import planet from './assets/planet.png';
 import './NavBar.css';
