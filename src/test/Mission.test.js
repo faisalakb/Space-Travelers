@@ -3,7 +3,7 @@ import missionReducer, {
   joinMissionReducer,
   fetchMission,
 } from '../redux/missionSlice/Mission';
-
+import { render } from '@testing-library/react';
 describe('missionSlice', () => {
   it('should return the initial state', () => {
     const nextState = missionReducer(undefined, {});
