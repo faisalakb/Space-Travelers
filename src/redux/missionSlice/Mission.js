@@ -8,20 +8,22 @@ export const fetchMission = createAsyncThunk('fetchMission', async () => {
   return response.data;
 });
 
+export const initialState = {
+  data: [],
+  isLoading: false,
+  isError: false,
+};
+
 const Mission = createSlice({
   name: 'missionSlice',
-  initialState: {
-    data: [],
-    isLoading: false,
-    isError: false,
-  },
+  initialState,
   reducers: {
     joinMissionReducer: (state, action) => {
-      const missionIdToJoin = action.payload;
+      const { missionIdToJoin, reserved } = action.payload;
       return {
         ...state,
         data: state.data.map((mission) => (mission.mission_id === missionIdToJoin
-          ? { ...mission, reserved: true }
+          ? { ...mission, reserved: !reserved }
           : mission)),
 
       };

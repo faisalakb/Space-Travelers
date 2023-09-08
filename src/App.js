@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { getRockets } from './redux/rockets/rocketSlice';
 import DisplayContent from './component/Missions/DisplayContent';
 import NavBar from './component/NavBar';
-import Rocket from './component/Rockets/Rocket';
+import Rocket from './component/Rockets/RocketDisplay';
 import MyProfile from './component/MyProfile/MyProfile';
 import { fetchMission } from './redux/missionSlice/Mission';
 import './App.css';
@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getRockets());
-  });
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(fetchMission());
@@ -23,15 +23,12 @@ function App() {
 
   return (
     <div className="App">
-
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Rocket />} />
-          <Route path="Mission" element={<DisplayContent />} />
-          <Route path="MyProfile" element={<MyProfile />} />
-        </Routes>
-      </BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Rocket />} />
+        <Route path="Mission" element={<DisplayContent />} />
+        <Route path="MyProfile" element={<MyProfile />} />
+      </Routes>
     </div>
   );
 }

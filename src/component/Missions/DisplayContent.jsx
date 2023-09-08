@@ -5,8 +5,8 @@ const DisplayContent = () => {
   const dispatch = useDispatch();
   const missionState = useSelector((state) => state.missionSlice);
 
-  const joinMission = (mid) => {
-    dispatch(joinMissionReducer(mid));
+  const joinMission = (mid, reserved) => {
+    dispatch(joinMissionReducer({ missionIdToJoin: mid, reserved }));
   };
 
   return (
@@ -30,7 +30,7 @@ const DisplayContent = () => {
                   <td>{current.mission_name}</td>
                   <td>{current.description}</td>
                   <td><button type="button" className={current.reserved ? 'active-member-button' : 'not-a-member-button'}>{current.reserved ? 'Active Member' : 'Not a Member'}</button></td>
-                  <td><button type="button" className={current.reserved ? 'join-mission' : 'not-join-mission'} onClick={() => { joinMission(current.mission_id); }}>{current.reserved ? 'Leave Mission' : 'Join Mission'}</button></td>
+                  <td><button type="button" className={current.reserved ? 'join-mission' : 'not-join-mission'} onClick={() => { joinMission(current.mission_id, current.reserved); }}>{current.reserved ? 'Leave Mission' : 'Join Mission'}</button></td>
                 </tr>
               ))}
             </tbody>
