@@ -6,6 +6,12 @@ const MyProfile = () => {
   const missionState = useSelector((state) => state.missionSlice);
   const rocketState = useSelector((state) => state.rockets);
 
+  // Filter reserved rockets
+  const reservedRockets = rocketState.rockets.filter((rocket) => rocket.reserved);
+
+  // Filter joined missions
+  const joinedMissions = missionState.data.filter((mission) => mission.reserved);
+
   return (
     <>
       {missionState.isLoading ? (
@@ -15,31 +21,21 @@ const MyProfile = () => {
           <span>
             <h1 className="profile-head">My Mission</h1>
             <ul>
-              {rocketState.rockets.map((current) => {
-                if (current.reserved) {
-                  return (
-                    <li className="myProfile-items" key={current.id}>
-                      {current.name}
-                    </li>
-                  );
-                }
-                return null;
-              })}
+              {joinedMissions.map((current) => (
+                <li className="myProfile-items" key={current.mission_id}>
+                  {current.mission_name}
+                </li>
+              ))}
             </ul>
           </span>
           <span>
             <h1 className="profile-head">My Rockets</h1>
             <ul>
-              {missionState.data.map((current) => {
-                if (current.reserved) {
-                  return (
-                    <li className="myProfile-items" key={current.mission_id}>
-                      {current.mission_name}
-                    </li>
-                  );
-                }
-                return null;
-              })}
+              {reservedRockets.map((current) => (
+                <li className="myProfile-items" key={current.id}>
+                  {current.name}
+                </li>
+              ))}
             </ul>
           </span>
         </div>
